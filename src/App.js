@@ -40,7 +40,7 @@ function App(){
         {datas.map((i) => {
           return(
             <div key={i.Name}>
-              <h3 className="text-3xl flex justify-center text-white">{i.Name}</h3>
+              <h3 className="text-2xl sm:text-3xl flex justify-center text-white">{i.Name}</h3>
               <img src={i.image} alt="img" className="border-2 rounded-lg drop-shadow-5xl h-[320px] w-[500px] sm:h-[450px] sm:w-[550px] mt-5 hover:border-slate-800"></img>
             </div>
           );
