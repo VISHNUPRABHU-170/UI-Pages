@@ -33,7 +33,7 @@ function App(){
 
   return(
     <div className="bg-black">
-      <div className="flex justify-center text-white py-[70px] text-3xl sm:text-5xl">
+      <div className="flex justify-center text-white py-[70px] text-2xl sm:text-5xl">
         <p className="drop-shadow-5xl shadow-white">Hii! Welcome to My UI-Designs</p>
       </div>
       <div className="px-[50px] sm:py-10 sm:px-[150px] grid grid-row gap-10 sm:grid-cols-2 sm:gap-x-[100px] sm:gap-y-[70px]">
