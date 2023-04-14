@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Age from './Components/Age-Calculator';
+import Res from './Components/Result-Summary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+       <Routes>
+          <Route index to path='/' element={<App></App>}></Route>
+          <Route path='/age-calc' element={<Age></Age>}></Route>
+          <Route path='/res-sum' element={<Res></Res>}></Route>
+       </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
