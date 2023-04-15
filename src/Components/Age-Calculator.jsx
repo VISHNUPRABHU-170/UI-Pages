@@ -29,7 +29,7 @@ export default function Age() {
         const date=d.getDate();
         const month=d.getMonth()+1;
         const year=d.getFullYear();
-        if(yy>year || (dd>date && mm>date && yy==year) || mm>12 || dd>31){
+        if(yy>year || (dd>date && mm>date && yy==year) || mm>12 || dd>31 || dd=="" || mm=="" || yy==""){
             alert("Enter Valid D.O.B");
         }else{
             if(mm>=month){
@@ -47,7 +47,7 @@ export default function Age() {
 
 
     return(
-        <div>
+        <div className="bg-black h-screen">
             <div className="flex justify-center py-[70px] text-3xl sm:text-5xl">
                 <p className="text-red-500 font-bold">Age Calculator</p>
             </div>

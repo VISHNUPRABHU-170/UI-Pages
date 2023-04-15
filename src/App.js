@@ -16,7 +16,7 @@ function App(){
   ];
 
   return(
-    <div className="h-screen bg-black">
+    <div className="bg-black">
       <div className="flex justify-center text-white py-[70px] text-2xl sm:text-5xl">
         <p className="drop-shadow-5xl shadow-white">Hii! Welcome to My UI-Designs</p>
       </div>
