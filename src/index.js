@@ -15,6 +15,8 @@ root.render(
           <Route index to path='/' element={<App></App>}></Route>
           <Route path='/age-calc' element={<Age></Age>}></Route>
           <Route path='/res-sum' element={<Res></Res>}></Route>
+          <Route path='/pers-info' element={<Res></Res>}></Route>
+          <Route path='/news-pge' element={<Res></Res>}></Route>
        </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -44,7 +44,7 @@ export default function Res(){
                         <h1 className="text-gray-500">80 / 100</h1>
                     </p>
                     <div className="flex justify-center mb-2">
-                       <button className="bg-purple-900 rounded-lg px-2 sm:h-[50px] sm:mt-2 w-[150px] text-white">Continue</button>
+                       <button className="bg-purple-900 rounded-lg px-2 sm:h-[50px] sm:mt-2 w-[150px] text-white border border-white shadow-xl">Continue</button>
                     </div>
                 </div>
               </div>
