@@ -65,10 +65,10 @@ export default function Particlesjs(){
             enable: true,
           },
           move: {
-            directions: "top",
+            direction: "bottom",
             enable: true,
             random: false,
-            speed: 3,
+            speed: 2,
             straight: true,
           },
           number: {
