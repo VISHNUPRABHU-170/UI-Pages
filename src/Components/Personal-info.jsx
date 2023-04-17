@@ -1,13 +1,17 @@
 import { useState } from "react";
+import ParticlesColorjs from "../particlejs-colors";
 
 function Info() {
   const [YI, setYI] = useState(true);
   const [SP, setSP] = useState(false);
   const [AO, setAO] = useState(false);
   const [S, setS] = useState(false);
+  const [P,setP] = useState(false);
+  const [BC,setBC] = useState(true);
 
   return (
-    <div className="flex items-center justify-center bg-blue-200 h-screen overflow-hidden">
+    <div className={`${BC ? 'bg-blue-200 flex items-center justify-center h-screen overflow-hidden' : 'flex items-center justify-center h-screen overflow-hidden'}`}>
+      {P && <ParticlesColorjs/>}
       <div className="bg-white border border-white shadow-lg rounded-md h-[600px] w-[350px] sm:h-[600px] sm:w-[900px]">
         <div className="grid grid-rows-2 sm:grid-cols-2">
           <div className="py-10 items-center px-14  sm:px-6 sm:mt-6 sm:ml-4 rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-violet-900 h-[200px] sm:h-[550px] sm:w-[300px] grid grid-cols-4 sm:grid-cols-1 gap-2 sm:gap-[-150px]">
@@ -18,6 +22,8 @@ function Info() {
                   setSP(false);
                   setAO(false);
                   setS(false);
+                  setP(false);
+                  setBC(true);
                 }}
                 className="border rounded-full w-10 h-10 hover:bg-blue-200 focus:bg-blue-200"
               >
@@ -35,6 +41,8 @@ function Info() {
                   setAO(false);
                   setS(false);
                   setYI(false);
+                  setP(false);
+                  setBC(true);
                 }}
                 className="border rounded-full w-10 h-10 hover:bg-blue-200 focus:bg-blue-200"
               >
@@ -52,6 +60,8 @@ function Info() {
                   setAO(true);
                   setS(false);
                   setYI(false);
+                  setP(false);
+                  setBC(true);
                 }}
                 className="border rounded-full w-10 h-10 hover:bg-blue-200 focus:bg-blue-200"
               >
@@ -69,6 +79,8 @@ function Info() {
                   setAO(false);
                   setS(true);
                   setYI(false);
+                  setP(false);
+                  setBC(true);
                 }}
                 className="border rounded-full w-10 h-10 hover:bg-blue-200 focus:bg-blue-200"
               >
@@ -137,6 +149,8 @@ function Info() {
                 setAO(false);
                 setS(false);
                 setYI(false);
+                setP(false);
+                setBC(true);
               }}
             >
               NEXT
@@ -194,6 +208,8 @@ function Info() {
                 setAO(true);
                 setS(false);
                 setYI(false);
+                setP(false);
+                setBC(true);
               }}
             >
               NEXT
@@ -227,6 +243,8 @@ function Info() {
               setAO(false);
               setS(true);
               setYI(false);
+              setP(false);
+              setBC(true);
             }}
           >
             NEXT
@@ -256,10 +274,8 @@ function Info() {
             className="sm:mt-[-5px] bg-gradient-to-r from-blue-500 to-violet-900 p-2 w-[100px] rounded-md shadow-lg"
             type="submit"
             onClick={() => {
-              setSP(false);
-              setAO(false);
-              setS(true);
-              setYI(false);
+              setBC(false);
+              setP(true);
             }}
           >
             SUBMIT

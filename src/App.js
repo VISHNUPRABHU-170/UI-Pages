@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Particlesjs from "./particles";
+import Particlesjs from "./particles-snow";
 
 function App() {
   const datas = [
