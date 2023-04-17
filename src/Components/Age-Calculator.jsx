@@ -120,7 +120,7 @@ export default function Age() {
               directions: "top",
               enable: true,
               random: false,
-              speed: 5,
+              speed: 3,
               straight: true,
             },
             number: {
@@ -128,7 +128,7 @@ export default function Age() {
                 enable: true,
                 area: 800,
               },
-              value: 80,
+              value: 100,
             },
             opacity: {
               value: 0.5,
@@ -137,10 +137,10 @@ export default function Age() {
               type: "circle",
             },
             size: {
-              value: 3,
+              value: 5,
             },
             links: {
-              enable: false,
+              enable: true,
             },
           },
           detectRetina: true,

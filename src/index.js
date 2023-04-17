@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Age from './Components/Age-Calculator';
 import Res from './Components/Result-Summary';
+import Info from './Components/Personal-info';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,7 @@ root.render(
           <Route index to path='/' element={<App></App>}></Route>
           <Route path='/age-calc' element={<Age></Age>}></Route>
           <Route path='/res-sum' element={<Res></Res>}></Route>
-          <Route path='/pers-info' element={<Res></Res>}></Route>
+          <Route path='/pers-info' element={<Info></Info>}></Route>
           <Route path='/news-pge' element={<Res></Res>}></Route>
        </Routes>
     </BrowserRouter>
