@@ -114,6 +114,9 @@ export default function ParticlesColorjs(){
                 {
                   src: "https://i.ibb.co/SVngKRg/10.png",
                 },
+                {
+                  src: "https://i.ibb.co/3719YgD/11.png",
+                },
             ],
           },
           size: {
