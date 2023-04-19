@@ -40,7 +40,7 @@ function News() {
                   />
                 </button>
               </div>
-              <div>{show && <Card />}</div>
+              <div className="sm:hidden">{show && <Card />}</div>
             </div>
           </div>
           <div className="mt-10 sm:flex sm:space-x-[200px]">
