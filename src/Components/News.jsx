@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function News() {
+  const [show, setShow] = useState(false);
+
   return (
     <div>
       <div className="flex items-center bg-white justify-center h-screen">
@@ -24,12 +28,19 @@ function News() {
                 </button>
               </div>
               <div className="flex justify-end sm:hidden">
-                <img
-                  src="https://i.ibb.co/4TCYkBk/nav-bar.png"
-                  alt="nav-bar"
-                  className="w-[50px]"
-                />
+                <button
+                  onClick={() => {
+                    setShow(!show);
+                  }}
+                >
+                  <img
+                    src="https://i.ibb.co/4TCYkBk/nav-bar.png"
+                    alt="nav-bar"
+                    className="w-[50px]"
+                  />
+                </button>
               </div>
+              <div>{show && <Card />}</div>
             </div>
           </div>
           <div className="mt-10 sm:flex sm:space-x-[200px]">
@@ -55,7 +66,7 @@ function News() {
                   </p>
                   <div>
                     <button className="mt-4 p-2 px-6 font-semibold text-white tracking-widest bg-orange-600">
-                      READMORE
+                      READ MORE
                     </button>
                   </div>
                 </div>
@@ -153,6 +164,37 @@ function News() {
                 </h3>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Card() {
+  return (
+    <div className="ml-[180px]">
+      <div className="w-[150px] h-[210px] bg-black rounded-lg border border-white">
+        <div className="grid grid-cols-1 gap-0 text-center text-bold text-white">
+          <div className="w-full hover:bg-white hover:text-black">
+            <h1 className="mt-3">Home</h1>
+            <hr className="mt-2"></hr>
+          </div>
+          <div className="w-full hover:bg-white hover:text-black">
+            <h1 className="mt-2">New</h1>
+            <hr className="mt-2"></hr>
+          </div>
+          <div className="w-full hover:bg-white hover:text-black">
+            <h1 className="mt-2">Popular</h1>
+            <hr className="mt-2"></hr>
+          </div>
+          <div className="w-full hover:bg-white hover:text-black">
+            <h1 className="mt-2">Trending</h1>
+            <hr className="mt-2"></hr>
+          </div>
+          <div className="w-full hover:bg-white hover:text-black">
+            <h1 className="mt-2">Categories</h1>
+            <hr className="mt-2"></hr>
           </div>
         </div>
       </div>
